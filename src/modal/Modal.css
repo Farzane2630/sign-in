@@ -1,0 +1,70 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgba(137, 43, 226, 0.921);
+}
+.container {
+    border: none;
+    border-radius: 22px;
+    background-color: rgb(223, 219, 219);
+    width: 350px;
+    height: 350px;
+    margin-top: 25%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px;
+}
+.header h2 {
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img, button, .pass-recovery, .sign-in {
+    cursor: pointer;
+}
+
+.br {
+    background-color: #ffff;
+    height: 3px;
+    width: inherit;
+}
+
+input{
+    padding-left: 10px;
+    background-color: white;
+}
+
+.pass-recovery, .sign-in{
+    color: blueviolet;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.login, input {
+    display:inline-block;
+    width: 80%;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 8%;
+}
+
+.login {
+    color: #ffff;
+    background-color: blueviolet;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}

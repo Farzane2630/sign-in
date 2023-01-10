@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Modal from './modal/Modal';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+      <Modal>
+      <div className="header">
+        <h2> Log in </h2>
+        <img src="./cancel.png" alt="Cancel"></img>
+        </div>
+        <div className='br'></div>
+        <input className="email" placeholder="E-mail" type="email"></input>
+        <input className="Password" placeholder="Password" type="password"></input>
+        <p className="pass-recovery"> Forget your password? </p>
+        <button className="login"> Login </button>
+        <div className='br'></div>
+        <p className="sign-in">Already have an account? Sign up </p>
+    </Modal>
+   
   );
 }
 
