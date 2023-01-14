@@ -9,7 +9,8 @@ function App() {
     massage: " Have you forget your Password?", 
     postmassage: "Already have an account? Sign-in",
     pass: "Password",
-    mail: "E-mail"
+    mail: "E-mail",
+    button: "Log in"
   }
   return (
     

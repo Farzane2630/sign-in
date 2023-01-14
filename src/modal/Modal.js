@@ -5,6 +5,17 @@ import propTypes from 'prop-types'
 
 export default class Modal extends React.Component {
 
+    state ={
+        emailValue: "",
+        passwordValue: "",
+    }
+
+    emailChangeHandler (event){
+        this.setState({emailValue : event.target.value})
+    }
+    passwordChangeHandler (event){
+        this.setState({passwordValue : event.target.value})
+    }    
     render(){
 
         return (
@@ -14,8 +25,8 @@ export default class Modal extends React.Component {
                     <img src="./cancel.png" alt="Cancel"></img>
                     </div>
                     <div className='br'></div>
-                    <input className="email" placeholder= {this.props.mail} type="email"></input>
-                    <input className="Password" placeholder= {this.props.pass} type="password"></input>
+                    <input className="email" placeholder= {this.props.mail} type="email" value={this.state.emailValue} onChange={(event)=> this.emailChangeHandler(event)}></input>
+                    <input className="Password" placeholder= {this.props.pass} type="password" value={this.state.passwordValue} onChange={(event)=> this.passwordChangeHandler(event)}></input>
                     <p className="pass-recovery"> {this.props.massage} </p>
                     <button className="login"> {this.props.button} </button>
                     <div className='br'></div>
